@@ -13,5 +13,10 @@ test("should return sum of multiple comma seperated numbers", ()=>{
     expect(calculator.add("1,2,3,4,5,6,7")).toBe(28)
 })
 
+test("should handle new line as seperator",()=>{
+    expect(calculator.add("3\n2\n1,2")).toBe(8)
+})
+
+
   
   
